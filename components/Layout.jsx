@@ -1,12 +1,15 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import Nav from "./Nav";
+import About from "./About";
+import Transport from "./Transport";
 
 const Layout = ({ title, description = "", children }) => {
     return (
         <>
             <Head>
-                <title>ПензГидроМаш</title>
+                <title>{title}</title>
                 <meta charset="UTF-8" />
                 <meta
                     name="viewport"
@@ -23,7 +26,7 @@ const Layout = ({ title, description = "", children }) => {
                 <link rel="icon" href="/logo.svg" />
             </Head>
 
-            <header className="header ">
+            <header className="header">
                 <div className="header-container container">
                     <div className="header__company">
                         <Image
@@ -33,41 +36,10 @@ const Layout = ({ title, description = "", children }) => {
                             height={38}
                         />
                         <Link href="/">
-                            <a className="header__logo-name-company">
-                                ПензГидроМаш
-                            </a>
+                            <a>ПензГидроМаш</a>
                         </Link>
                     </div>
-
-                    <div className="nav-bar">
-                        <ul className="nav-links">
-                            <li>
-                                <Link href="/">
-                                    <a>Компания</a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    <a>Продукты и услуги</a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    <a>Проекты</a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    <a>Новости</a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    <a>Контакты</a>
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
+                    <Nav />
                 </div>
 
                 <div className="header__position container">
@@ -80,8 +52,8 @@ const Layout = ({ title, description = "", children }) => {
                     />
                     <p>&nbsp; Контакты</p>
                 </div>
-                <h1 className="container header__title">Компания</h1>
-                <hr className="header__hr" />
+                <h1 className="container">Компания</h1>
+                <hr />
                 <p className="container header__description">
                     Основная сфера деятельности «ПензГидромаш» — <br />
                     создание систем для нефтяной, газовой, химической <br /> и
@@ -89,7 +61,8 @@ const Layout = ({ title, description = "", children }) => {
                 </p>
             </header>
 
-            <div className="">{children}</div>
+            <About />
+            <Transport />
         </>
     );
 };

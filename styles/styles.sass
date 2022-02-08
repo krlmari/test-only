@@ -1,4 +1,8 @@
 @import url("../fonts/gilroy/stylesheet.css")
+
+$white: #F6F6F6
+$black: #000000
+$normal-font-style: normal
   
 body, html
   padding: 0
@@ -22,10 +26,43 @@ h1, h2, h3, h4, h5, h5, p
 .container 
     padding: 0 80px
 
+.block-center
+    max-width: 1840px
+    min-width: 325px
+
+.flex-row
+    display: flex
+    flex-direction: row
+
+.flex-column
+    display: flex
+    flex-direction: column
+
 .header 
-  background: linear-gradient(#5551F7, #5551F7) left/50vw 100vh no-repeat, linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/tanks-and-smokestacks.png') right/cover no-repeat 
+  background: linear-gradient(#5551F7, #5551F7) left/50vw 100vh no-repeat, linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/tanks-and-smokestacks.png') right no-repeat 
   height: 800px
   width: 100%
+  >h1
+    font-style: $normal-font-style
+    font-weight: 500
+    font-size: 84px
+    line-height: 100%
+    color: $white
+    margin-top: 20px
+  >hr
+    width: 50vw
+    padding: 0
+    margin-right: 50%
+    color: #D6D6D6
+    margin-top: 195px
+  >p 
+    font-style: $normal-font-style
+    font-weight: 300
+    font-size: 25px
+    line-height: 160%
+    color: $white
+    margin-top: 48px
+
 
 .header-container
   display: flex
@@ -35,62 +72,119 @@ h1, h2, h3, h4, h5, h5, p
 
 .header__company
     display: flex
-
-.header__logo-name-company 
-    margin-left: 20px
-    font-size: 14px
-    line-height: 100%
-    letter-spacing: 0.1em
-    text-transform: uppercase
-    color: #F6F6F6
-    align-self: center
-    
-
+    >a
+        margin-left: 20px
+        font-size: 14px
+        line-height: 100%
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: $white
+        align-self: center
+   
 .nav-bar 
     width: 45vw
     font-size: 14px
     line-height: 16px
     letter-spacing: 0.1em
     text-transform: uppercase
-    color: #F6F6F6
+    color: $white
+    >ul
+        display: flex
+        flex-direction: row
+        justify-content: space-around
 
-.nav-links 
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-
-.nav-links:not(:first-child)
-    opacity: 0.6
 
 .header__position
     display: flex
     margin-top: 165px
-    font-style: normal
+    font-style: $normal-font-style
     font-weight: 300
     font-size: 14px
     line-height: 160%
-    color: #F6F6F6
+    color: $white
     opacity: 0.5
 
-.header__title
-    font-style: normal
-    font-weight: 500
-    font-size: 84px
-    line-height: 100%
-    color: #F6F6F6
-    margin-top: 20px
+/* Section: about */
 
-.header__hr
+.about
+    min-height: 245px
+    >div
+        display: flex
+        justify-content: space-between
+        margin-top: 136px
+        >h2
+            font-style: normal
+            font-weight: 300
+            font-size: 47px
+            line-height: 1.5
+            color: $black
+            align-self: start
+        >p
+            max-width: 1200px
+            align-self: end
+            padding-top: 20px
+            font-style: normal
+            font-weight: 300
+            font-size: 25px
+            line-height: 160%
+            color: $black
+
+.about__image 
     width: 50vw
-    padding: 0
-    margin-right: 50%
-    color: #D6D6D6
-    margin-top: 195px
+    height: 60vh
+    background-image: url(/processing-plant.png)
+    background-repeat: no-repeat
+    background-size: cover
 
-.header__description
+.about-container
+    padding-right: 80px
+
+.about__description
+    width: 40vw
+    padding-left: 80px
     font-style: normal
-    font-weight: 300
-    font-size: 25px
-    line-height: 160%
-    color: #F6F6F6
-    margin-top: 48px
+    font-weight: normal
+    font-size: 18px
+    line-height: 1.8
+    color:  #101010
+
+    /* Section: transport */
+
+.transport-container
+    >h2
+        margin-top: 136px
+        margin-bottom: 40px
+        font-style: normal
+        font-weight: 300
+        font-size: 47px
+        line-height: 1.5
+        color: #1C1C1C
+
+.card-image
+    width: 50vw
+    height: 620px
+    background-image: url(/the-big-truck.png)
+    background-repeat: no-repeat
+    background-size: cover
+    float: left
+
+.card-item
+    min-height: 279px
+    margin-bottom: 62px
+    cursor: pointer
+    transition: 1s
+    >div
+        margin-top: 75px
+        margin-left: 80px
+        >h3
+            margin-bottom: 19px
+        >p
+            font-style: normal
+            font-weight: 300
+            font-size: 18px
+            line-height: 1.8
+            color: $black
+
+.card-item:hover 
+    background-color: #F6F6F6
+
