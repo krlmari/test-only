@@ -4,6 +4,7 @@ const Nav = () => {
     return (
         <>
             <div className="nav-bar">
+                <div className="menu-burger"></div>
                 <ul>
                     <li>
                         <Link href="/">

@@ -29,12 +29,7 @@ const Layout = ({ title, description = "", children }) => {
             <header className="header">
                 <div className="header-container container">
                     <div className="header__company">
-                        <Image
-                            src="/logo.svg"
-                            alt="ПензГидроМаш picture"
-                            width={39}
-                            height={38}
-                        />
+                        <div className="logo"></div>
                         <Link href="/">
                             <a>ПензГидроМаш</a>
                         </Link>
@@ -59,6 +54,7 @@ const Layout = ({ title, description = "", children }) => {
                     создание систем для нефтяной, газовой, химической <br /> и
                     нефтехимической сфер промышленности.
                 </p>
+                <div className="header__image"></div>
             </header>
 
             <About />

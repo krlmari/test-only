@@ -2,7 +2,7 @@ const About = () => {
     return (
         <>
             <div className="about">
-                <div className="container">
+                <div className="about__header container">
                     <h2>О нас</h2>
                     <p>
                         Наша цель — взаимовыгодное сотрудничество на основе

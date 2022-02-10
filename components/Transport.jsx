@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Slider from "./Slider";
 
 const Transport = () => {
     return (
@@ -7,8 +8,12 @@ const Transport = () => {
                 <div className="transport-container">
                     <h2 className="container">Транспорт</h2>
                     <div className="transport-content">
-                        <div className="card-image"></div>
-                        <div className="flex-column">
+                        <p className="transport__numbers container">01/02</p>
+                        <div className="cards-image">
+                            <div className="card-image card-image-relative"></div>
+                            <div className="card-image card-image-absolute"></div>
+                        </div>
+                        <div className="cards flex-column">
                             <div className="card-item">
                                 <div>
                                     <h3>Автотранспорт</h3>
