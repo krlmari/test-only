@@ -1,20 +1,32 @@
+import {
+    AboutStyled,
+    AboutHeader,
+    AboutContainer,
+    AboutImage,
+    AboutDescription,
+} from "../styles/About.styled";
+import { Container } from "../styles/Container.styled";
+
 const About = () => {
     return (
         <>
-            <div className="about">
-                <div className="about__header container">
-                    <h2>О нас</h2>
-                    <p>
-                        Наша цель — взаимовыгодное сотрудничество на основе
-                        долгосрочных контрактов. Мы представлены на рынке с 2006
-                        года и не перестаем развиваться, совершенствовать
-                        качество своих услуг, оптимизировать затраты для
-                        снижения стоимости продукции.
-                    </p>
-                </div>
-                <div className="about-container">
-                    <div className="about__image"></div>
-                    <div className="about__description">
+            <AboutStyled>
+                <Container>
+                    <AboutHeader>
+                        <h2>О нас</h2>
+                        <p>
+                            Наша цель — взаимовыгодное сотрудничество на основе
+                            долгосрочных контрактов. Мы представлены на рынке с
+                            2006 года и не перестаем развиваться,
+                            совершенствовать качество своих услуг,
+                            оптимизировать затраты для снижения стоимости
+                            продукции.
+                        </p>
+                    </AboutHeader>
+                </Container>
+                <AboutContainer>
+                    <AboutImage></AboutImage>
+                    <AboutDescription>
                         <p>
                             Выполняем все работы по проектированию систем,
                             закупке необходимых материалов, производству,
@@ -35,9 +47,9 @@ const About = () => {
                             жесткий менеджмент качества — по международному
                             стандарту ГОСТ Р ИСО 9001.
                         </p>
-                    </div>
-                </div>
-            </div>
+                    </AboutDescription>
+                </AboutContainer>
+            </AboutStyled>
         </>
     );
 };

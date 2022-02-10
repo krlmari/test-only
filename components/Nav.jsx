@@ -1,10 +1,12 @@
 import Link from "next/link";
+import { NavBar } from "../styles/Nav.styled";
+import { MenuBurger } from "../styles/MenuBurger.styled";
 
 const Nav = () => {
     return (
         <>
-            <div className="nav-bar">
-                <div className="menu-burger"></div>
+            <NavBar>
+                <MenuBurger></MenuBurger>
                 <ul>
                     <li>
                         <Link href="/">
@@ -32,7 +34,7 @@ const Nav = () => {
                         </Link>
                     </li>
                 </ul>
-            </div>
+            </NavBar>
         </>
     );
 };
