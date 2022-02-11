@@ -6,5 +6,6 @@ export const MenuBurger = styled.div`
         height: 11px;
         background-image: url(/burger-menu.svg);
         cursor: pointer;
+        align-self: center;
     }
 `;

@@ -12,8 +12,17 @@ import {
     HeaderImage,
 } from "../styles/Header.styled";
 import { Logo } from "../styles/Logo.styled";
+import { MenuBurger } from "../styles/MenuBurger.styled";
 
 const Header = () => {
+    const items = [
+        { value: "Компания", href: "/company" },
+        { value: "Продукты и услуги", href: "/products-and-services" },
+        { value: "Проекты", href: "/projects" },
+        { value: "Новости", href: "/news" },
+        { value: "Контакты", href: "/contacts" },
+    ];
+
     return (
         <>
             <StyledHeader>
@@ -25,7 +34,8 @@ const Header = () => {
                                 <a>ПензГидроМаш</a>
                             </Link>
                         </HeaderCompany>
-                        <Nav />
+                        <MenuBurger></MenuBurger>
+                        <Nav items={items} />
                     </HeaderContainer>
                 </Container>
 

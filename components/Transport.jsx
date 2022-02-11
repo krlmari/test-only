@@ -1,13 +1,12 @@
-import Slider from "./Slider";
 import { Container } from "../styles/Container.styled";
-import {
-    TransportStyled,
-    TransportContent,
-    TransportNumberOfCard,
-    TransportCards,
-    TransportCardImage,
-    TransportCardItem,
-} from "../styles/Transport.styled";
+
+import { TransportStyled, TransportContent } from "../styles/Transport.styled";
+
+import TransportCardsDesktop from "./TransportCardsDesktop";
+import TransportCardsSlider from "./TransportCardsSlider";
+import { CardsSlider } from "../styles/TransportCardsSlider.styled";
+
+import { TransportDesktop } from "../styles/TransportCardsDesktop";
 
 const Transport = () => {
     return (
@@ -17,37 +16,13 @@ const Transport = () => {
                     <h2>Транспорт</h2>
                 </Container>
                 <TransportContent>
-                    <Container>
-                        <TransportNumberOfCard>01/02</TransportNumberOfCard>
-                    </Container>
-                    <div>
-                        <TransportCardImage></TransportCardImage>
-                    </div>
-                    <TransportCards>
-                        <TransportCardItem>
-                            <div>
-                                <h3>Автотранспорт</h3>
-                                <p>
-                                    — Собственная автотранспортная компания
-                                    <br />
-                                    — Перевозка негабаритных и тяжеловесных
-                                    грузов
-                                    <br />
-                                    — Доставка в любую точку России
-                                    <br />
-                                </p>
-                            </div>
-                        </TransportCardItem>
-                        <TransportCardItem>
-                            <div>
-                                <h3>Железнодорожный транспорт</h3>
-                                <p>
-                                    На заводе имеется ж/д ветка, заходящая в
-                                    производственное здание
-                                </p>
-                            </div>
-                        </TransportCardItem>
-                    </TransportCards>
+                    <TransportDesktop>
+                        <TransportCardsDesktop></TransportCardsDesktop>
+                    </TransportDesktop>
+
+                    <CardsSlider>
+                        <TransportCardsSlider></TransportCardsSlider>
+                    </CardsSlider>
                 </TransportContent>
             </TransportStyled>
         </>

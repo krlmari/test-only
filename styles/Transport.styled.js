@@ -49,25 +49,24 @@ export const TransportCards = styled.div`
     }
 `;
 
-export const TransportCardImage = styled.div`
-    background-image: url(/the-big-truck.png);
-    background-repeat: no-repeat;
+export const TransportCardImageDesktop = styled.div`
+    position: relative;
     width: 50vw;
     height: 620px;
-    background-repeat: no-repeat;
-    background-size: cover;
     float: left;
 
     @media ${(props) => props.theme.media.m760} {
-        float: none;
-        width: 80%;
+        display: none;
+    }
+`;
+
+export const TransportCardImageMobile = styled.div`
+    display: none;
+    @media ${(props) => props.theme.media.m760} {
+        display: block;
+        width: 500px;
         height: 400px;
         margin-left: 30px;
-        transform: scale(-1, 1);
-    }
-
-    @media ${(props) => props.theme.media.m375} {
-        height: 260px;
     }
 `;
 
@@ -76,7 +75,6 @@ export const TransportCardItem = styled.div`
     margin-bottom: 62px;
     margin-left: 50%;
     cursor: pointer;
-    transition: background-color 1s;
 
     div {
         padding-top: 75px;
@@ -102,14 +100,22 @@ export const TransportCardItem = styled.div`
     }
 
     @media ${(props) => props.theme.media.m760} {
+        display: block;
         margin-bottom: 0;
         margin-left: 0;
+        cursor: auto;
+        margin-right: 60px;
+
+        &:hover {
+            background-color: ${(props) =>
+                props.color || props.theme.colors.white};
+        }
 
         div {
             padding-top: 20px;
             margin-left: 0;
             padding-right: 30px;
-            padding-left: 30px;
+            padding-left: 0;
         }
         p {
             font-size: 16px;
