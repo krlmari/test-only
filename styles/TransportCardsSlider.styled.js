@@ -6,6 +6,8 @@ export const CardsSlider = styled.div`
     @media ${(props) => props.theme.media.m760} {
         position: relative;
         display: block;
+        overflow-x: scroll;
+        scrollbar-width: none;
     }
 `;
 
@@ -16,7 +18,7 @@ export const FlexRow = styled.div`
         display: flex;
         flex-direction: row;
         flex-flow: nowrap;
-        gap: 30px;
+        gap: 90px;
         width: 200vw;
     }
 `;

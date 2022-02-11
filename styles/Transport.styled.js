@@ -103,8 +103,8 @@ export const TransportCardItem = styled.div`
         display: block;
         margin-bottom: 0;
         margin-left: 0;
+        margin-right: 30px;
         cursor: auto;
-        margin-right: 60px;
 
         &:hover {
             background-color: ${(props) =>
