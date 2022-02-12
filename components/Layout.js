@@ -1,9 +1,7 @@
 import Head from "next/head";
 import Header from "./Header";
-import About from "./About";
-import Transport from "./Transport";
 
-const Layout = ({ title, description = "" }) => {
+const Layout = ({ title, description = "", children }) => {
     return (
         <>
             <Head>
@@ -24,9 +22,7 @@ const Layout = ({ title, description = "" }) => {
                 <link rel="icon" href="/logo.svg" />
             </Head>
 
-            <Header />
-            <About />
-            <Transport />
+            {children}
         </>
     );
 };

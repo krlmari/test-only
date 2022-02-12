@@ -1,14 +1,20 @@
 import Layout from "../components/Layout";
-import { ThemeProvider } from "styled-components";
-import GlobalStyle from "../styles/globals";
-import theme from "../styles/theme";
+import CompanyMain from "../components/CompanyMain";
+import { StyledHeader } from "../styles/Header.styled";
+import About from "../components/About";
+import Transport from "../components/Transport";
 
 const Home = () => {
     return (
-        <ThemeProvider theme={theme}>
-            <GlobalStyle />
-            <Layout title="Компания" />
-        </ThemeProvider>
+        <>
+            <Layout title="Компания">
+                <StyledHeader>
+                    <CompanyMain />
+                </StyledHeader>
+                <About />
+                <Transport />
+            </Layout>
+        </>
     );
 };
 
