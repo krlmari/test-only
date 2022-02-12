@@ -1,13 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-
-html {
-    max-width: 1840px;
-    min-width: 320px;
-    margin: 0 auto;
-}
-
 * {
   padding: 0;
   margin: 0;

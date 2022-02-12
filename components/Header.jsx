@@ -16,7 +16,7 @@ import { MenuBurger } from "../styles/MenuBurger.styled";
 
 const Header = () => {
     const items = [
-        { value: "Компания", href: "/company" },
+        { value: "Компания", href: "/" },
         { value: "Продукты и услуги", href: "/products-and-services" },
         { value: "Проекты", href: "/projects" },
         { value: "Новости", href: "/news" },
@@ -41,14 +41,20 @@ const Header = () => {
 
                 <Container>
                     <HeaderPosition>
-                        <p>Главная &nbsp;</p>
+                        <Link href="/main">
+                            <a>Главная</a>
+                        </Link>
+                        <p> &nbsp;&nbsp; </p>
                         <Image
                             src="/arrow.svg"
                             alt="ПензГидроМаш picture"
                             width={7}
                             height={12}
                         />
-                        <p>&nbsp; Контакты</p>
+                        <p> &nbsp;&nbsp; </p>
+                        <Link href="/contacts">
+                            <a>Контакты</a>
+                        </Link>
                     </HeaderPosition>
                     <h1>Компания</h1>
                 </Container>

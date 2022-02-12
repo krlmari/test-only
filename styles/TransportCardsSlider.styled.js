@@ -8,6 +8,7 @@ export const CardsSlider = styled.div`
         display: block;
         overflow-x: scroll;
         scrollbar-width: none;
+        scroll-direction: horizontal;
     }
 `;
 

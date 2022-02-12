@@ -11,12 +11,11 @@ import { FlexRow } from "../styles/TransportCardsSlider.styled";
 const TransportCardsSlider = () => {
     return (
         <>
-            <Container>
-                <TransportNumberOfCard>01/02</TransportNumberOfCard>
-            </Container>
-
             <FlexRow>
                 <TransportCardItem>
+                    <Container>
+                        <TransportNumberOfCard>01/02</TransportNumberOfCard>
+                    </Container>
                     <TransportImage
                         image="/the-big-truck.png"
                         layout={undefined}
@@ -36,6 +35,9 @@ const TransportCardsSlider = () => {
                     </div>
                 </TransportCardItem>
                 <TransportCardItem>
+                    <Container>
+                        <TransportNumberOfCard>02/02</TransportNumberOfCard>
+                    </Container>
                     <TransportImage
                         image="/railway-transport.jpg"
                         layout={undefined}

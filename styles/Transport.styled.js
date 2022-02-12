@@ -42,6 +42,7 @@ export const TransportNumberOfCard = styled.p`
 `;
 
 export const TransportCards = styled.div`
+    height: 620px;
     @media ${(props) => props.theme.media.m760} {
         display: flex;
         flex-direction: row;
@@ -71,15 +72,15 @@ export const TransportCardImageMobile = styled.div`
 `;
 
 export const TransportCardItem = styled.div`
+    display: flex;
     min-height: 279px;
-    margin-bottom: 62px;
-    margin-left: 50%;
     cursor: pointer;
+    height: 50%;
+    align-items: center;
 
     div {
-        padding-top: 75px;
         padding-right: 80px;
-        padding-left: 82px;
+        padding-left: 60px;
     }
     h3 {
         margin-bottom: 19px;

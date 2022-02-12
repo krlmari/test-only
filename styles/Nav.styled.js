@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NavBar = styled.nav`
     align-self: center;
     margin-left: 10px;
-    width: 45vw;
+    width: 40vw;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.1em;
@@ -14,9 +14,6 @@ export const NavBar = styled.nav`
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-    li {
-        opacity: 0.5;
     }
 
     @media ${(props) => props.theme.media.m1280} {
