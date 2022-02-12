@@ -65,10 +65,11 @@ export const AboutContainer = styled.div`
 
 export const AboutImage = styled.div`
     width: 50vw;
-    height: 60vh;
+    height: 580px;
     background-image: url(/processing-plant.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     @media ${(props) => props.theme.media.m760} {
         width: 100%;

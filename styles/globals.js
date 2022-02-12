@@ -1,6 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+
+html {
+    max-width: 2560px;
+    min-width: 300px;
+    margin: 0 auto;
+}
 * {
   padding: 0;
   margin: 0;
