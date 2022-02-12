@@ -14,8 +14,8 @@ export const CrossStyled = styled.button`
     position: absolute;
     right: 10px;
     top: 10px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background-image: url(/cross-svgrepo-com.svg);
     background-repeat: no-repeat;
     cursor: pointer;
@@ -26,7 +26,7 @@ export const MenuBurgerStyled = styled.div`
     @media ${(props) => props.theme.media.m760} {
         display: block;
         position: fixed;
-        width: 50vw;
+        width: 70vw;
         height: 500px;
         background: white;
         right: 0;
