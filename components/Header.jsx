@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "./Nav";
+import { useState } from "react";
 
 import { Container } from "../styles/Container.styled";
 import {
@@ -12,9 +13,16 @@ import {
     HeaderImage,
 } from "../styles/Header.styled";
 import { Logo } from "../styles/Logo.styled";
-import { MenuBurger } from "../styles/MenuBurger.styled";
+
+import MenuBurger from "./MenuBurger";
+
+import { MenuBurgerNav } from "../styles/MenuBurger.styled";
+
+import { BurgerStyled } from "../styles/MenuBurger.styled";
 
 const Header = () => {
+    const [menuBurgerActive, setMenuBurgerActive] = useState(false);
+
     const items = [
         { value: "Компания", href: "/" },
         { value: "Продукты и услуги", href: "/products-and-services" },
@@ -34,7 +42,18 @@ const Header = () => {
                                 <a>ПензГидроМаш</a>
                             </Link>
                         </HeaderCompany>
-                        <MenuBurger></MenuBurger>
+
+                        <BurgerStyled
+                            onClick={() =>
+                                setMenuBurgerActive(!menuBurgerActive)
+                            }
+                        ></BurgerStyled>
+                        <MenuBurger
+                            items={items}
+                            menuActive={menuBurgerActive}
+                            setActive={setMenuBurgerActive}
+                        ></MenuBurger>
+
                         <Nav items={items} />
                     </HeaderContainer>
                 </Container>

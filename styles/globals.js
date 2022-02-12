@@ -24,6 +24,14 @@ ul {
 h1, h2, h3, h4, h5, h5, p {
     margin: 0;
 }
+
+button {
+    padding: 0;
+    border: none;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
 `;
 
 export default GlobalStyle;

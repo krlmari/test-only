@@ -6,7 +6,7 @@ import { NoActiveLink } from "../styles/NoActiveLink";
 
 const Nav = ({ items }) => {
     const router = useRouter();
-    console.log(router.pathname);
+
     return (
         <>
             <NavBar>
