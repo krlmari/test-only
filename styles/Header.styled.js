@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
     height: 800px;
     width: 100%;
     h1 {
-        font-style: $normal-font-style;
+        font-style: normal;
         font-weight: 500;
         font-size: 84px;
         line-height: 100%;

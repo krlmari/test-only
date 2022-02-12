@@ -55,15 +55,3 @@ export const MenuBurgerStyled = styled.div`
         }
     }
 `;
-
-export const MenuBurgerNav = styled.div`
-    @media ${(props) => props.theme.media.m760} {
-    }
-`;
-
-export const MenuBurgerBlur = styled.div``;
-
-export const MenuBurgerContent = styled.div`
-    width: 50vw;
-    height: 100vh;
-`;

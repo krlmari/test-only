@@ -13,7 +13,7 @@ const Nav = ({ items }) => {
                 <ul>
                     {items.map((item) => {
                         return (
-                            <li key={item}>
+                            <li key={item.id}>
                                 <Link href={item.href} passHref>
                                     {router.pathname === item.href ? (
                                         <a>{item.value}</a>

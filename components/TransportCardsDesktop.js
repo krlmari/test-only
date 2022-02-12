@@ -1,12 +1,10 @@
 import { useState } from "react";
-
+import TransportImage from "./TransportImage";
 import {
     TransportCards,
     TransportCardImageDesktop,
     TransportCardItem,
 } from "../styles/Transport.styled";
-
-import TransportImage from "./TransportImage";
 
 const TransportCardsDesktop = () => {
     const [imageActive, setImageActive] = useState("/the-big-truck.png");

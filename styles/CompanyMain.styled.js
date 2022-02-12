@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CompanyDescription = styled.p`
-    font-style: $normal-font-style;
+    font-style: normal;
     font-weight: 300;
     font-size: 25px;
     line-height: 160%;
@@ -25,7 +25,7 @@ export const CompanyImage = styled.div`
 export const CompanySecondLink = styled.div`
     display: flex;
     margin-top: 165px;
-    font-style: $normal-font-style;
+    font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 1.6;

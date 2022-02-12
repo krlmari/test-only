@@ -1,8 +1,4 @@
-import {
-    MenuBurgerStyled,
-    BurgerStyled,
-    CrossStyled,
-} from "../styles/MenuBurger.styled";
+import { MenuBurgerStyled, CrossStyled } from "../styles/MenuBurger.styled";
 import Nav from "./Nav";
 
 const MenuBurger = ({ items, menuActive, setActive }) => {

@@ -3,9 +3,7 @@ import {
     TransportNumberOfCard,
     TransportCardItem,
 } from "../styles/Transport.styled";
-
 import TransportImage from "./TransportImage";
-
 import { CardsFlexRow } from "../styles/TransportCardsSlider.styled";
 import { TransportTransformCard } from "../styles/Transport.styled";
 

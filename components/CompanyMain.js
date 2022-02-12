@@ -1,13 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import Header from "./Header";
 import { Container } from "../styles/Container.styled";
-
 import {
     CompanySecondLink,
     CompanyDescription,
     CompanyImage,
 } from "../styles/CompanyMain.styled";
-import Header from "./Header";
 
 const CompanyMain = () => {
     return (
