@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyle from "../styles/globals";
 import theme from "../styles/theme";
 
-const Home = () => {
+const Company = () => {
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyle />
@@ -12,4 +12,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Company;

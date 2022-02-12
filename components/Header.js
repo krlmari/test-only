@@ -22,7 +22,7 @@ const Header = () => {
     const [menuBurgerActive, setMenuBurgerActive] = useState(false);
 
     const items = [
-        { value: "Компания", href: "/" },
+        { value: "Компания", href: "/company" },
         { value: "Продукты и услуги", href: "/products-and-services" },
         { value: "Проекты", href: "/projects" },
         { value: "Новости", href: "/news" },
@@ -58,7 +58,7 @@ const Header = () => {
 
                 <Container>
                     <HeaderPosition>
-                        <Link href="/main">
+                        <Link href="/">
                             <a>Главная</a>
                         </Link>
                         <p> &nbsp;&nbsp; </p>
