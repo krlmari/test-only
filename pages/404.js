@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import { CenterBlock } from "../styles/CenterBlock.styled";
+import { ErrorStyled } from "../styles/ErrorStyled.styled";
 
 const Error = () => {
     const router = useRouter();
@@ -12,10 +12,10 @@ const Error = () => {
 
     return (
         <>
-            <CenterBlock>
+            <ErrorStyled>
                 <h1>404</h1>
                 <h2>Something is going wrong...</h2>
-            </CenterBlock>
+            </ErrorStyled>
         </>
     );
 };
