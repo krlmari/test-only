@@ -4,8 +4,8 @@ import { TransportStyled, TransportContent } from "../styles/Transport.styled";
 
 import TransportCardsDesktop from "./TransportCardsDesktop";
 import TransportCardsSlider from "./TransportCardsSlider";
-import { CardsSlider } from "../styles/TransportCardsSlider.styled";
 
+import { CardsSlider } from "../styles/TransportCardsSlider.styled";
 import { TransportDesktop } from "../styles/TransportCardsDesktop";
 
 const Transport = () => {

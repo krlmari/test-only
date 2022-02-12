@@ -16,8 +16,6 @@ import { Logo } from "../styles/Logo.styled";
 
 import MenuBurger from "./MenuBurger";
 
-import { MenuBurgerNav } from "../styles/MenuBurger.styled";
-
 import { BurgerStyled } from "../styles/MenuBurger.styled";
 
 const Header = () => {
