@@ -22,7 +22,9 @@ export const CrossStyled = styled.button`
 `;
 
 export const MenuBurgerStyled = styled.div`
+    display: none;
     @media ${(props) => props.theme.media.m760} {
+        display: block;
         position: fixed;
         width: 50vw;
         height: 500px;

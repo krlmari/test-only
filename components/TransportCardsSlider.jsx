@@ -21,8 +21,8 @@ const TransportCardsSlider = () => {
                         <TransportImage
                             image="/the-big-truck.png"
                             layout={undefined}
-                            width="2000"
-                            height="2000"
+                            width="1000"
+                            height="1000"
                         ></TransportImage>
                     </TransportTransformCard>
                     <div>
@@ -45,8 +45,8 @@ const TransportCardsSlider = () => {
                         <TransportImage
                             image="/railway-transport.jpg"
                             layout={undefined}
-                            width="2000"
-                            height="2000"
+                            width="1000"
+                            height="1000"
                         ></TransportImage>
                     </TransportTransformCard>
                     <div>
