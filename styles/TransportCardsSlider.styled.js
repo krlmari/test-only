@@ -12,10 +12,10 @@ export const CardsSlider = styled.div`
     }
 `;
 
-export const FlexRow = styled.div`
+export const CardsFlexRow = styled.div`
     @media ${(props) => props.theme.media.m760} {
         margin-left: 30px;
-        margin-right: 30px;
+        margin-right: 10px;
         display: flex;
         flex-direction: row;
         flex-flow: nowrap;

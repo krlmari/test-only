@@ -83,6 +83,7 @@ export const HeaderPosition = styled.div`
     font-weight: 300;
     font-size: 14px;
     line-height: 1.6;
+    align-items: center;
     color: ${(props) => props.color || props.theme.colors.white};
     opacity: 0.5;
 

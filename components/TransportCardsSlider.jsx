@@ -6,12 +6,12 @@ import {
 
 import TransportImage from "./TransportImage";
 
-import { FlexRow } from "../styles/TransportCardsSlider.styled";
+import { CardsFlexRow } from "../styles/TransportCardsSlider.styled";
 
 const TransportCardsSlider = () => {
     return (
         <>
-            <FlexRow>
+            <CardsFlexRow>
                 <TransportCardItem>
                     <Container>
                         <TransportNumberOfCard>01/02</TransportNumberOfCard>
@@ -52,7 +52,7 @@ const TransportCardsSlider = () => {
                         </p>
                     </div>
                 </TransportCardItem>
-            </FlexRow>
+            </CardsFlexRow>
         </>
     );
 };

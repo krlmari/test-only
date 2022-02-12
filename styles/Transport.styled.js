@@ -77,6 +77,7 @@ export const TransportCardItem = styled.div`
     cursor: pointer;
     height: 50%;
     align-items: center;
+    transition: background-color 1s;
 
     div {
         padding-right: 80px;

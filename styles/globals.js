@@ -10,7 +10,12 @@ const GlobalStyle = createGlobalStyle`
 a {
   color: inherit;
   text-decoration: none;
+  transition: opacity 1s;
 }
+
+a:hover {
+    opacity: 0.8;
+  }
 
 ul {
     list-style: none;
