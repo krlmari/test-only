@@ -27,8 +27,6 @@ export const NavBar = styled.nav`
     }
 
     @media ${(props) => props.theme.media.m760} {
-        width: auto;
-        align-self: center;
         display: none;
     }
 `;

@@ -61,14 +61,8 @@ export const TransportCardImageDesktop = styled.div`
     }
 `;
 
-export const TransportCardImageMobile = styled.div`
-    display: none;
-    @media ${(props) => props.theme.media.m760} {
-        display: block;
-        width: 500px;
-        height: 400px;
-        margin-left: 30px;
-    }
+export const TransportTransformCard = styled.div`
+    transform: scaleX(-1);
 `;
 
 export const TransportCardItem = styled.div`
@@ -116,7 +110,7 @@ export const TransportCardItem = styled.div`
         div {
             padding-top: 20px;
             margin-left: 0;
-            padding-right: 30px;
+            padding-right: 0;
             padding-left: 0;
         }
         p {

@@ -7,6 +7,7 @@ import {
 import TransportImage from "./TransportImage";
 
 import { CardsFlexRow } from "../styles/TransportCardsSlider.styled";
+import { TransportTransformCard } from "../styles/Transport.styled";
 
 const TransportCardsSlider = () => {
     return (
@@ -16,12 +17,14 @@ const TransportCardsSlider = () => {
                     <Container>
                         <TransportNumberOfCard>01/02</TransportNumberOfCard>
                     </Container>
-                    <TransportImage
-                        image="/the-big-truck.png"
-                        layout={undefined}
-                        width="2000"
-                        height="2000"
-                    ></TransportImage>
+                    <TransportTransformCard>
+                        <TransportImage
+                            image="/the-big-truck.png"
+                            layout={undefined}
+                            width="2000"
+                            height="2000"
+                        ></TransportImage>
+                    </TransportTransformCard>
                     <div>
                         <h3>Автотранспорт</h3>
                         <p>
@@ -38,12 +41,14 @@ const TransportCardsSlider = () => {
                     <Container>
                         <TransportNumberOfCard>02/02</TransportNumberOfCard>
                     </Container>
-                    <TransportImage
-                        image="/railway-transport.jpg"
-                        layout={undefined}
-                        width="2000"
-                        height="2000"
-                    ></TransportImage>
+                    <TransportTransformCard>
+                        <TransportImage
+                            image="/railway-transport.jpg"
+                            layout={undefined}
+                            width="2000"
+                            height="2000"
+                        ></TransportImage>
+                    </TransportTransformCard>
                     <div>
                         <h3>Железнодорожный транспорт</h3>
                         <p>
